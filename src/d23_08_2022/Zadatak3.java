@@ -79,13 +79,13 @@ public class Zadatak3 {
 //			Grejac: jacina grejaca kW
 			
 		Ringla goreLevo = new Ringla("obicna", 0.8);
-		goreLevo.pojacajRinglu();
-		goreLevo.pojacajRinglu();
 		Ringla goreDesno = new Ringla("obicna", 1);
 		Ringla doleLevo =  new Ringla("obicna", 1.5);
-		doleLevo.pojacajRinglu();
 		Ringla doleDesno =  new Ringla("ekspres", 1.5);
 		ElektricniSporet crveni = new ElektricniSporet("gorenje", 2, 3, goreLevo, goreDesno, doleLevo, doleDesno);
+		crveni.pojacaj(goreLevo, goreDesno, doleLevo, doleDesno);
+		goreLevo.pojacajRinglu();
+		doleDesno.pojacajRinglu();
 		goreLevo.print();
 		goreDesno.print();
 		doleLevo.print();

@@ -90,7 +90,7 @@ public class ElektricniSporet {
 		return doleDesno;
 	}
 
-	public void pojacaj(String pozicija1, String pozicija2, String pozicija3, String pozicija4) {
+	public void pojacaj(Ringla pozicija1, Ringla pozicija2, Ringla pozicija3, Ringla pozicija4) {
 		int ukljucene= 0;
 		if(goreLevo.isUkljucena()) {
 			ukljucene++;
@@ -106,25 +106,25 @@ public class ElektricniSporet {
 			
 		}
 		if(pozicija1!= null) {
-			goreLevo.pojacajRinglu();
+			this.goreLevo.pojacajRinglu();
 		}if(pozicija2!= null) {
-			goreDesno.pojacajRinglu();
+			this.goreDesno.pojacajRinglu();
 		}if(pozicija3!= null) {
-			doleLevo.pojacajRinglu();
+			this.doleLevo.pojacajRinglu();
 		}if(pozicija4!= null) {
-			doleDesno.pojacajRinglu();
+			this.doleDesno.pojacajRinglu();
 		} 
 	}
 
-	public void iskljuciRinglu(String pozicija1, String pozicija2, String pozicija3, String pozicija4){
+	public void iskljuciRinglu(Ringla pozicija1, Ringla pozicija2, Ringla pozicija3, Ringla pozicija4){
 		if(pozicija1!= null) {
-			goreLevo.iskljuciRinglu();
+			this.goreLevo.iskljuciRinglu();
 		}if(pozicija2!= null) {
-			goreDesno.iskljuciRinglu();
+			this.goreDesno.iskljuciRinglu();
 		}if(pozicija3!= null) {
-			doleLevo.iskljuciRinglu();
+			this.doleLevo.iskljuciRinglu();
 		}if(pozicija4!= null) {
-			doleDesno.iskljuciRinglu();
+			this.doleDesno.iskljuciRinglu();
 		} 
 	}
 

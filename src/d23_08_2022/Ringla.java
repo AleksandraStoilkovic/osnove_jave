@@ -49,9 +49,9 @@ public class Ringla {
 
 	public void pojacajRinglu() {
 		if (this.jacinaRingle < this.maksimalnoJacinaRingle() && this.tip.equals("obicna") ) {
-			this.jacinaRingle = this.jacinaRingle++;
+			this.jacinaRingle++;
 		} else if (this.jacinaRingle < this.maksimalnoJacinaRingle() && tip.equals("ekspres")) {
-			this.jacinaRingle = this.jacinaRingle++;
+			this.jacinaRingle++;
 		}
 	}
 
